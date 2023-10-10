@@ -1,0 +1,31 @@
+!DOCTYPE html>
+<html>
+<head>
+<title>
+Registration 
+</title>
+</head>
+<body>
+<h1>Registration form</h1>
+<form>
+<label for="name">NAME:</label><br><br>
+<input type="text" id="name" name="name"><br><br>
+<label for="pass">ENTER REGISTER NUMBER</label><br><br>
+<input type="number" id="number" name="number"><br><br><br>
+<label for="gender">GENDER</label><br><br>
+<input type="radio" id="gender" name="gender"value="gender"/>Male<br><br><br>
+
+<input type="radio" id="gender" name="gender"value="gender"/>Female<br><br><br>
+
+<input type="submit" value="submit">
+<input type="submit" value="back">
+</form>
+<script>
+function changecolor(){
+    let randomColor=Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.background='#'+randomColor;
+}
+setInterval(changecolor,1000);
+</script>
+</body>
+</html>
